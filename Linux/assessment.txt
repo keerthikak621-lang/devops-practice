@@ -1,0 +1,118 @@
+
+SECTION 1 – Purpose and Example Usage of Commands
+
+1.pwd
+  Purpose: Displays the current working directory.
+
+2.ls
+  Purpose: Lists files and directories in the current directory.
+
+3.cd
+  Purpose: Changes the current directory.
+
+4.mkdir
+  Purpose: Creates a new directory.
+
+5.rm -rf
+  Purpose: Deletes files or directories forcefully and recursively.
+
+6.ps -ef
+  Purpose: Displays all running processes in the system with detailed information.
+
+7.top
+  Purpose: Shows real-time system processes and CPU usage.
+
+8.df -h
+  Purpose: Displays disk space usage in a human-readable format.
+
+9.history
+  Purpose: Displays the list of previously executed commands.
+
+10.uptime
+   Purpose: Shows how long the system has been running and the system load.
+
+==================================================
+
+SECTION 2 – Linux Commands for Tasks
+
+1.Create a directory called project-files
+  mkdir project-files
+
+2.Navigate into the project-files directory
+  cd project-files
+
+3.Create a file called notes.txt using vi
+  vi notes.txt
+
+4.Display the contents of notes.txt
+  cat notes.txt
+
+5.Copy notes.txt to backup.txt
+  cp notes.txt backup.txt
+
+6.Show the first 100 lines of a file called logs.txt
+  head -n 100 logs.txt
+
+7.Show the last 100 lines of logs.txt
+  tail -n 100 logs.txt
+
+8.Check the disk storage usage of the server
+  df -h
+
+9.Check the running processes in the system
+  ps -ef
+
+10.Delete a file called temp.txt
+   rm temp.txt
+
+==================================================
+
+SECTION 3 – Concept Questions
+
+1.What is the difference between > and >> in Linux?
+ Redirects output to a file and overwrites the existing content.
+ Example:
+ echo "Hello" > file.txt
+ Redirects output to a file and appends the content without deleting the existing content.
+ Example:
+ echo "Hello" >> file.txt
+
+2.What is the purpose of the kill -9 command?
+ The kill -9 command forcefully terminates a process using its Process ID (PID). It immediately stops the process.
+ Example:
+ kill -9 1234
+
+3.What is the difference between rm and rmdir?
+ rm: Removes files and directories. It can delete directories with files using options like -r.
+ Example:
+ rm file.txt
+ rmdir: Removes only empty directories.
+ Example:
+ rmdir foldername
+
+4.What information does the netstat -tulpn command provide?
+ The netstat -tulpn command shows active network connections, listening ports, and the processes using those ports.
+
+5.What is the purpose of the ping command?
+ The ping command checks the connectivity between your system and another server or website. It also measures the response time.
+ Example:
+ ping google.com
+
+==================================================
+
+SECTION 4 – Scenario Based Questions
+
+1.You want to check the current working directory. Which command will you use?
+ pwd
+
+2.You want to create a directory called devops inside the home directory. Write the command.
+ mkdir ~/devops
+
+3.You want to check which process is using high CPU in the system. Which command will help?
+ top
+
+4.You want to check whether your server can connect to google.com. Which command will you use?
+ ping google.com
+
+5.You want to view the last 50 lines of a log file called application.log. Write the command.
+ tail -n 50 application.log
